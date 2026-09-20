@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tugas Sekolah</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Tugas Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Website Tugas Sekolah</h1>
+    <p>Algoritma, Pseudocode, Flowchart & Data Siswa</p>
+</header>
+
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#identitas">Identitas</a>
+    <a href="#materi">Materi</a>
+    <a href="#algoritma">Algoritma</a>
+    <a href="#pseudocode">Pseudocode</a>
+    <a href="#flowchart">Flowchart</a>
+    <a href="#data-siswa">Data Siswa</a>
+</nav>
+
+<main>
+
+<section id="beranda">
+    <h2>🏠 Beranda</h2>
+    <p>
+        Selamat datang di website tugas sekolah.
+        Website ini berisi materi pembelajaran serta
+        aplikasi sederhana untuk mengelola data siswa.
+    </p>
+</section>
+
+<section id="identitas">
+    <h2>👤 Identitas</h2>
+    <p><b>Nama:</b> ................................</p>
+    <p><b>Kelas:</b> ................................</p>
+    <p><b>Sekolah:</b> ................................</p>
+    <p><b>Mata Pelajaran:</b> Informatika / RPL</p>
+</section>
+
+<section id="materi">
+    <h2>📚 Materi</h2>
+    <p>
+        Materi website ini membahas algoritma, pseudocode,
+        flowchart, dan penerapan sederhana dalam pengolahan
+        data siswa menggunakan HTML, CSS, dan JavaScript.
+    </p>
+</section>
+
+<section id="algoritma">
+    <h2>🧠 Algoritma Data Siswa</h2>
+
+    <ol>
+        <li>Mulai.</li>
+        <li>Buka halaman Data Siswa.</li>
+        <li>Isi data siswa.</li>
+        <li>Klik tombol Tambah/Simpan.</li>
+        <li>Sistem memeriksa kelengkapan data.</li>
+        <li>Jika lengkap, data ditambahkan ke tabel.</li>
+        <li>Jika tidak lengkap, tampilkan pesan kesalahan.</li>
+        <li>Selesai.</li>
+    </ol>
+</section>
+
+<section id="pseudocode">
+    <h2>📝 Pseudocode</h2>
+
+    <pre>
+BEGIN
+
+INPUT nama
+INPUT kelas
+INPUT jurusan
+
+IF nama, kelas, dan jurusan tidak kosong THEN
+    Tampilkan data ke tabel
+ELSE
+    Tampilkan pesan "Data belum lengkap"
+END IF
+
+END
+    </pre>
+</section>
+
+<section id="flowchart">
+    <h2>📊 Flowchart</h2>
+
+    <div class="flowchart">
+        <div class="box">MULAI</div>
+        <div class="arrow">↓</div>
+
+        <div class="box">Isi Data Siswa</div>
+        <div class="arrow">↓</div>
+
+        <div class="diamond">Data Lengkap?</div>
+
+        <div class="flow-row">
+            <div>
+                <p>❌ Tidak</p>
+                <div class="box">Tampilkan Pesan Kesalahan</div>
+            </div>
+
+            <div>
+                <p>✅ Ya</p>
+                <div class="box">Tambahkan ke Tabel</div>
+            </div>
+        </div>
+
+        <div class="arrow">↓</div>
+        <div class="box">SELESAI</div>
+    </div>
+</section>
+
+<section id="data-siswa">
+    <h2>👩‍🎓 Data Siswa</h2>
+
+    <form id="formSiswa">
+
+        <input type="text" id="nama" placeholder="Nama Siswa">
+
+        <input type="text" id="kelas" placeholder="Kelas">
+
+        <input type="text" id="jurusan" placeholder="Jurusan">
+
+        <button type="submit">Tambah Data</button>
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabelSiswa">
+        </tbody>
+    </table>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Website Tugas Sekolah</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
