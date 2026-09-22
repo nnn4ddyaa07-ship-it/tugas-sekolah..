@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kedai Semangka Fresh 🍉</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <div class="logo">
+      🍉 <span>Kedai Semangka Fresh</span>
+    </div>
+
+    <div class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#promo">Promo</a>
+      <a href="#order">Order</a>
+    </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <p class="welcome">
+        🍉 SELAMAT DATANG DI KEDAI KAMI
+      </p>
+
+      <h1>
+        Segarnya Semangka,
+        <span>Bikin Harimu Ceria!</span>
+      </h1>
+
+      <p class="description">
+        Nikmati es semangka segar dengan rasa manis,
+        dingin, dan menyegarkan. Dibuat dari semangka
+        pilihan setiap hari. 💙
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#menu" class="btn">
+          🍉 Lihat Menu
+        </a>
+
+        <a href="#order" class="btn secondary">
+          🛒 Order Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-picture">
+
+      <div class="circle">
+
+        <img
+          src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=700&q=80"
+          alt="Semangka segar"
+        >
+
+      </div>
+
+      <div class="floating-card">
+        ❄️ Fresh & Cold
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROMO -->
+  <section class="promo" id="promo">
+
+    <div class="promo-content">
+
+      <div>
+        <p class="promo-small">
+          🔥 PROMO SPESIAL HARI INI
+        </p>
+
+        <h2>
+          Beli 2 Es Semangka
+          <span>Lebih Hemat!</span>
+        </h2>
+
+        <p>
+          Dapatkan harga spesial hanya hari ini.
+          Cocok diminum bareng teman! 🍉
+        </p>
+      </div>
+
+      <div class="promo-price">
+        <span>Mulai dari</span>
+        <strong>Rp18.000</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+
+    <div class="section-title">
+
+      <p>🍉 MENU FAVORIT</p>
+
+      <h2>Es Semangka Segar</h2>
+
+      <span>
+        Pilih minuman favoritmu!
+      </span>
+
+    </div>
+
+
+    <div class="menu-container">
+
+
+      <!-- PRODUK 1 -->
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=500&q=80"
+            alt="Es semangka"
+          >
+
+          <span class="badge">
+            Best Seller
+          </span>
+
+        </div>
+
+        <div class="product-info">
+
+          <h3>Es Semangka Original</h3>
+
+          <p>
+            Semangka segar dengan es yang
+            dingin dan manis alami.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp10.000
+            </strong>
+
+            <button
+              onclick="tambahOrder('Es Semangka Original', 10000)"
+            >
+              + Order
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUK 2 -->
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=500&q=80"
+            alt="Semangka segar"
+          >
+
+          <span class="badge">
+            Favorit
+          </span>
+
+        </div>
+
+        <div class="product-info">
+
+          <h3>Es Semangka Jumbo</h3>
+
+          <p>
+            Ukuran jumbo untuk kamu yang
+            ingin lebih puas dan segar.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp15.000
+            </strong>
+
+            <button
+              onclick="tambahOrder('Es Semangka Jumbo', 15000)"
+            >
+              + Order
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUK 3 -->
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1568901839119-631418a3910d?auto=format&fit=crop&w=500&q=80"
+            alt="Minuman segar"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <h3>Semangka Creamy</h3>
+
+          <p>
+            Perpaduan semangka segar dengan
+            rasa creamy yang lembut.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong>
+              Rp13.000
+            </strong>
+
+            <button
+              onclick="tambahOrder('Semangka Creamy', 13000)"
+            >
+              + Order
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ORANG MINUM -->
+  <section class="drinking">
+
+    <div class="drinking-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80"
+        alt="Orang sedang menikmati minuman"
+      >
+
+    </div>
+
+
+    <div class="drinking-text">
+
+      <p>
+        💙 MOMEN MENYEGARKAN
+      </p>
+
+      <h2>
+        Segarnya Sampai
+        <span>Tegukan Terakhir!</span>
+      </h2>
+
+      <p>
+        Nikmati es semangka dingin sambil
+        bersantai di kedai kami bersama
+        teman dan keluarga.
+      </p>
+
+      <div class="features">
+
+        <div>
+          🍉
+          <strong>Fresh</strong>
+          <small>Semangka pilihan</small>
+        </div>
+
+        <div>
+          ❄️
+          <strong>Cold</strong>
+          <small>Disajikan dingin</small>
+        </div>
+
+        <div>
+          ❤️
+          <strong>Happy</strong>
+          <small>Dibuat dengan cinta</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- KEDAI -->
+  <section class="kedai">
+
+    <div class="kedai-text">
+
+      <p>🏠 KEDAI KAMI</p>
+
+      <h2>
+        Mampir ke
+        <span>Kedai Semangka Fresh!</span>
+      </h2>
+
+      <p>
+        Tempat sederhana dengan suasana nyaman
+        untuk menikmati minuman segar bersama
+        orang-orang tersayang. 🍉
+      </p>
+
+      <div class="kedai-info">
+
+        <div>
+          📍
+          <strong>Lokasi</strong>
+          <span>Jl. Semangka No. 10</span>
+        </div>
+
+        <div>
+          🕐
+          <strong>Jam Buka</strong>
+          <span>09.00 - 21.00</span>
+        </div>
+
+        <div>
+          📞
+          <strong>Telepon</strong>
+          <span>0812-3456-7890</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="kedai-image">
+
+      <div class="shop-icon">
+        🍉
+      </div>
+
+      <h3>
+        KEDAI<br>
+        SEMANGKA FRESH
+      </h3>
+
+      <p>
+        Fresh • Sweet • Happy
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ORDER -->
+  <section class="order-section" id="order">
+
+    <div class="order-box">
+
+      <div class="order-title">
+
+        <p>🛒 ORDER SEKARANG</p>
+
+        <h2>
+          Pesanan Kamu
+        </h2>
+
+      </div>
+
+
+      <div id="orderList">
+
+        <p class="empty">
+          Belum ada pesanan 🍉
+        </p>
+
+      </div>
+
+
+      <div class="total">
+
+        <span>Total</span>
+
+        <strong id="totalHarga">
+          Rp0
+        </strong>
+
+      </div>
+
+
+      <button
+        class="order-button"
+        onclick="kirimPesanan()"
+      >
+        💬 Pesan Sekarang
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      🍉 Kedai Semangka Fresh
+    </div>
+
+    <p>
+      Segar, manis, dan bikin happy! 💙
+    </p>
+
+    <small>
+      © 2026 Kedai Semangka Fresh
+    </small>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
