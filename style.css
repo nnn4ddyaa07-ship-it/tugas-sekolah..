@@ -1,179 +1,875 @@
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eef7ff;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: #eefaff;
+  color: #315c6d;
 }
 
-header {
-    background: #8ecae6;
-    text-align: center;
-    padding: 35px 15px;
+
+/* NAVBAR */
+
+.navbar {
+  background: #c9efff;
+
+  padding: 18px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 3px 15px #9ed6e522;
 }
 
-header h1 {
-    margin: 0;
-    color: white;
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #267c99;
 }
 
-header p {
-    color: white;
+.nav-menu {
+  display: flex;
+  gap: 25px;
 }
 
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 8px #ccc;
+.nav-menu a {
+  color: #447487;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav a {
-    text-decoration: none;
-    color: #277da1;
-    margin: 5px 8px;
-    font-weight: bold;
+.nav-menu a:hover {
+  color: #ef7777;
 }
 
-nav a:hover {
-    color: #023e8a;
+
+/* HERO */
+
+.hero {
+  min-height: 650px;
+
+  padding: 70px 9%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
 }
 
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+.hero-text {
+  max-width: 570px;
 }
 
-section {
-    background: white;
-    margin: 25px 0;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px #d0dce5;
+.welcome {
+  color: #55a9c4;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
-h2 {
-    color: #277da1;
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  color: #28677d;
+  margin-bottom: 25px;
 }
 
-pre {
-    background: #f1f8fc;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-x: auto;
+.hero h1 span {
+  color: #ef7777;
 }
 
-.flowchart {
-    text-align: center;
+.description {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #658793;
+  margin-bottom: 30px;
 }
 
-.box {
-    display: inline-block;
-    background: #caf0f8;
-    border: 2px solid #277da1;
-    padding: 15px 25px;
-    border-radius: 10px;
-    margin: 5px;
-    font-weight: bold;
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.arrow {
-    font-size: 30px;
-    color: #277da1;
+.btn {
+  display: inline-block;
+
+  background: #63b9d6;
+
+  color: white;
+
+  padding: 14px 25px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s;
 }
 
-.diamond {
-    display: inline-block;
-    background: #ade8f4;
-    border: 2px solid #277da1;
-    padding: 25px;
-    transform: rotate(45deg);
-    margin: 25px;
+.btn:hover {
+  background: #3d9ebd;
+  transform: translateY(-3px);
 }
 
-.diamond::first-line {
-    transform: rotate(-45deg);
+.btn.secondary {
+  background: white;
+  color: #418da7;
+  border: 2px solid #8bd0e5;
 }
 
-.flow-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin: 20px 0;
+
+/* HERO IMAGE */
+
+.hero-picture {
+  position: relative;
 }
 
-form {
-    display: grid;
-    gap: 12px;
+.circle {
+  width: 390px;
+  height: 390px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #c8efff;
+
+  border: 12px solid white;
+
+  box-shadow: 0 20px 40px #62aec533;
 }
 
-input {
-    padding: 12px;
-    border: 1px solid #aaa;
-    border-radius: 8px;
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #277da1;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+.floating-card {
+  position: absolute;
+
+  bottom: 25px;
+  right: -20px;
+
+  background: white;
+
+  padding: 15px 22px;
+
+  border-radius: 20px;
+
+  color: #428aa2;
+
+  font-weight: bold;
+
+  box-shadow: 0 8px 20px #568ca522;
 }
 
-button:hover {
-    background: #023e8a;
+
+/* PROMO */
+
+.promo {
+  padding: 45px 8%;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 25px;
+.promo-content {
+  background: #bce9fa;
+
+  border-radius: 30px;
+
+  padding: 35px 45px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  box-shadow: 0 10px 30px #65a9bd22;
 }
 
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+.promo-small {
+  color: #e66f6f;
+  font-weight: bold;
 }
 
-th {
-    background: #caf0f8;
+.promo h2 {
+  font-size: 32px;
+  color: #27687e;
+  margin: 8px 0;
 }
+
+.promo h2 span {
+  color: #e76f6f;
+}
+
+.promo p {
+  color: #577e8c;
+}
+
+.promo-price {
+  background: white;
+
+  padding: 20px 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.promo-price span {
+  display: block;
+  font-size: 13px;
+}
+
+.promo-price strong {
+  color: #e76f6f;
+  font-size: 30px;
+}
+
+
+/* MENU */
+
+.menu-section {
+  background: white;
+
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title p {
+  color: #56a8c2;
+  font-weight: bold;
+}
+
+.section-title h2 {
+  color: #286a80;
+  font-size: 35px;
+  margin: 8px 0;
+}
+
+.section-title span {
+  color: #8099a1;
+}
+
+.menu-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+  width: 300px;
+
+  background: #f1fbff;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px #5f9eb522;
+
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-image {
+  height: 220px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  background: #ef7777;
+
+  color: white;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 22px;
+}
+
+.product-info h3 {
+  color: #32778e;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  color: #78929b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.product-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.product-bottom strong {
+  color: #ef7070;
+  font-size: 19px;
+}
+
+.product-bottom button {
+  border: none;
+
+  background: #63b9d6;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.product-bottom button:hover {
+  background: #428faa;
+}
+
+
+/* ORANG MINUM */
+
+.drinking {
+  padding: 80px 9%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.drinking-image {
+  width: 50%;
+}
+
+.drinking-image img {
+  width: 100%;
+
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 35px;
+
+  box-shadow: 0 15px 35px #4f91a533;
+}
+
+.drinking-text {
+  flex: 1;
+}
+
+.drinking-text > p:first-child {
+  color: #58a9c2;
+
+  font-weight: bold;
+}
+
+.drinking-text h2 {
+  font-size: 40px;
+
+  color: #28687d;
+
+  margin: 12px 0 20px;
+}
+
+.drinking-text h2 span {
+  color: #ef7777;
+}
+
+.drinking-text > p {
+  line-height: 1.8;
+
+  color: #6b8993;
+}
+
+.features {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+.features div {
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 15px #5794a51c;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.features strong {
+  color: #3a7f95;
+}
+
+.features small {
+  color: #81969c;
+}
+
+
+/* KEDAI */
+
+.kedai {
+  background: #dff5ff;
+
+  padding: 80px 9%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+.kedai-text {
+  max-width: 570px;
+}
+
+.kedai-text > p:first-child {
+  color: #55a7c0;
+  font-weight: bold;
+}
+
+.kedai-text h2 {
+  font-size: 40px;
+
+  color: #28687d;
+
+  margin: 10px 0 20px;
+}
+
+.kedai-text h2 span {
+  color: #ef7777;
+}
+
+.kedai-text > p {
+  line-height: 1.8;
+  color: #64848f;
+}
+
+.kedai-info {
+  margin-top: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.kedai-info div {
+  display: grid;
+
+  grid-template-columns: 35px 120px 1fr;
+
+  align-items: center;
+
+  background: white;
+
+  padding: 12px 15px;
+
+  border-radius: 15px;
+}
+
+.kedai-info strong {
+  color: #397c92;
+}
+
+.kedai-info span {
+  color: #77919a;
+}
+
+.kedai-image {
+  width: 330px;
+  height: 330px;
+
+  background: white;
+
+  border-radius: 35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 15px 30px #5594aa22;
+
+  border: 8px solid #bce9fa;
+}
+
+.shop-icon {
+  font-size: 90px;
+}
+
+.kedai-image h3 {
+  color: #327b93;
+
+  font-size: 25px;
+
+  margin: 10px;
+}
+
+.kedai-image p {
+  color: #ef7777;
+  font-weight: bold;
+}
+
+
+/* ORDER */
+
+.order-section {
+  padding: 80px 20px;
+
+  background: white;
+}
+
+.order-box {
+  max-width: 700px;
+
+  margin: auto;
+
+  background: #eefaff;
+
+  padding: 35px;
+
+  border-radius: 30px;
+
+  box-shadow: 0 10px 30px #579aae22;
+}
+
+.order-title {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.order-title p {
+  color: #55a7c0;
+
+  font-weight: bold;
+}
+
+.order-title h2 {
+  color: #28687d;
+
+  font-size: 32px;
+}
+
+.empty {
+  text-align: center;
+
+  color: #819aa2;
+
+  padding: 25px;
+}
+
+.order-item {
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  margin-bottom: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.order-item button {
+  border: none;
+
+  background: #bce9fa;
+
+  color: #367d95;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 20px;
+
+  padding-top: 20px;
+
+  border-top: 2px dashed #b9dce8;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 20px;
+}
+
+.total strong {
+  color: #ef7070;
+}
+
+.order-button {
+  width: 100%;
+
+  border: none;
+
+  background: #63b9d6;
+
+  color: white;
+
+  padding: 16px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background: #408fae;
+}
+
+
+/* FOOTER */
 
 footer {
-    text-align: center;
-    background: #8ecae6;
-    color: white;
-    padding: 20px;
-    margin-top: 30px;
+  background: #438ca6;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
 }
 
-@media (max-width: 600px) {
-    nav a {
-        display: inline-block;
-        font-size: 13px;
-    }
+.footer-logo {
+  font-size: 20px;
 
-    .flow-row {
-        flex-direction: column;
-    }
+  font-weight: bold;
 
-    table {
-        font-size: 12px;
-    }
+  margin-bottom: 8px;
+}
+
+footer p {
+  margin-bottom: 10px;
+
+  opacity: 0.9;
+}
+
+footer small {
+  opacity: 0.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .circle {
+    width: 310px;
+    height: 310px;
+  }
+
+  .promo-content {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .drinking {
+    flex-direction: column;
+  }
+
+  .drinking-image {
+    width: 100%;
+  }
+
+  .drinking-text {
+    text-align: center;
+  }
+
+  .features {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .kedai {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .kedai-info {
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .circle {
+    width: 270px;
+    height: 270px;
+  }
+
+  .promo {
+    padding: 30px 15px;
+  }
+
+  .promo-content {
+    padding: 25px;
+  }
+
+  .promo h2 {
+    font-size: 25px;
+  }
+
+  .drinking-image img {
+    height: 300px;
+  }
+
+  .drinking-text h2,
+  .kedai-text h2 {
+    font-size: 30px;
+  }
+
+  .kedai {
+    padding: 60px 20px;
+  }
+
+  .kedai-image {
+    width: 280px;
+    height: 280px;
+  }
+
 }
